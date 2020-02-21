@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>Chest Chat</title>
+</head>
+<body>
+
+    <!-- the Chat -->
+    <div class="chat">
+
+        <div class="chat-scroll">
+            <div id="chat-content">
+            </div>
+        </div>
+
+        <div class="chat-input">
+            <input id="message" type="text" />
+            <button onclick="sendMessage()"></button>
+        </div>
+
+    </div>
+
+    <!-- Username register screen -->
+    <div id="welcome" class="show">
+        <input id="username" type="text" placeholder="digite seu nome"/>
+        <button onclick="submitUserName()">Registrar</button>
+    </div>
+
+    <!-- socket.io CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
